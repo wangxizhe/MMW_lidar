@@ -1,0 +1,9 @@
+<?xml version="1.0"?> 
+<launch>
+<arg name="output" default="screen" /> 
+<arg name="required" default="true" />  
+<arg name="respawn" default="false" /> 
+
+<node pkg="MMW_lidar" type="MMW_lidar" name="MMW_lidar" respawn="$(arg respawn)" required="$(arg required)" output="$(arg output)"/>
+ <node pkg="rviz" type="rviz" name="rviz" args="-d $(find MMW_lidar)/launch/test.rviz" />
+</launch> 
