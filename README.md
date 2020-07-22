@@ -11,6 +11,7 @@ catkin_make
 ## 运行方法  
 source devel/setup.bash  
 roslaunch MMW_lidar MMW_lidar.launch  
-打开新的终端运行cd catkin_workspace/src/MMW_lidar/include  
+打开新的终端运行  
+cd catkin_workspace/src/MMW_lidar/include  
 rosbag play test.bag  
 即可观察到标记线
