@@ -14,4 +14,4 @@ roslaunch MMW_lidar MMW_lidar.launch
 打开新的终端运行  
 cd catkin_workspace/src/MMW_lidar/include  
 rosbag play test.bag  
-即可观察到标记线
+即可在Rviz界面观察到标记线
